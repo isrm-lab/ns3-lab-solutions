@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~/ns-3-dev
 for wifiManagerType in Aarf Minstrel Ideal
 do
 	./waf --run "lab5 --apManager=ns3::"$wifiManagerType"WifiManager --pcap=true"
